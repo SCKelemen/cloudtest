@@ -6,13 +6,13 @@ module.exports = {
 	'facebookAuth' : {
 		'clientID' 		: '408721156127597', // your App ID
 		'clientSecret' 	: 'fcef4efb49700042ea48897a5c93f6bc', // your App Secret
-		'callbackURL' 	: 'http://67.205.156.5/auth/facebook/callback'
+		'callbackURL' 	: 'http://appfinity.us/auth/facebook/callback'
 	},
 
 	'twitterAuth' : {
 		'consumerKey' 		: 'xHT1DeCEzZ1rz6OWadVuxHltX',
 		'consumerSecret' 	: 'a5gJG5tNFDYmVk0TtFenGeOzA0vCUo20XqbfCgGeITUcaObu5k',
-		'callbackURL' 		: 'http://67.205.156.5/auth/twitter/callback'
+		'callbackURL' 		: 'http://appfinity.us/auth/twitter/callback'
 	},
 
 	'googleAuth' : {
