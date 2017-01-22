@@ -1,3 +1,4 @@
+var request = require('request');
 module.exports = function(app, passport) {
 
 // normal routes ===============================================================
@@ -181,6 +182,21 @@ module.exports = function(app, passport) {
 		user.save(function(err) {
 			res.redirect('/profile');
 		});
+	});
+	
+	
+	
+		// show the home page (will also have our login links)
+	app.get('/messages', function(req, res) {
+	request.post(
+    'https://api.twitter.com/1.1/direct_messages.json',
+    function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log(body)
+        }
+    }
+);
+		res.render('index.ejs');
 	});
 
 
