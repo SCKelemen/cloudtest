@@ -196,7 +196,7 @@ module.exports = function(app, passport) {
         }
     }
 );
-		res.render('index.ejs');
+		res.send('No Messages')
 	});
 
 
